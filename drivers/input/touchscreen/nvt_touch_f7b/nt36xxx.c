@@ -94,19 +94,19 @@ const uint16_t touch_key_array[TOUCH_KEY_NUM] = {
 
 #if WAKEUP_GESTURE
 
-#define GESTURE_WORD_C          12
-#define GESTURE_WORD_W          13
-#define GESTURE_WORD_V          14
+#define GESTURE_WORD_C          KEY_C
+#define GESTURE_WORD_W          KEY_W
+#define GESTURE_WORD_V          KEY_V
 #define GESTURE_DOUBLE_CLICK    KEY_WAKEUP
-#define GESTURE_WORD_Z          16
-#define GESTURE_WORD_M          17
-#define GESTURE_WORD_O          18
-#define GESTURE_WORD_e          19
-#define GESTURE_WORD_S          20
-#define GESTURE_SLIDE_UP        21
-#define GESTURE_SLIDE_DOWN      22
-#define GESTURE_SLIDE_LEFT      23
-#define GESTURE_SLIDE_RIGHT     24
+#define GESTURE_WORD_Z          KEY_Z
+#define GESTURE_WORD_M          KEY_M
+#define GESTURE_WORD_O          KEY_O
+#define GESTURE_WORD_e          KEY_E
+#define GESTURE_WORD_S          KEY_S
+#define GESTURE_SLIDE_UP        KEY_UP
+#define GESTURE_SLIDE_DOWN      KEY_DOWN
+#define GESTURE_SLIDE_LEFT      KEY_LEFT
+#define GESTURE_SLIDE_RIGHT     KEY_RIGHT
 
 const uint16_t gesture_key_array[] = {
 	GESTURE_WORD_C,
