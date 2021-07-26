@@ -97,7 +97,7 @@ const uint16_t touch_key_array[TOUCH_KEY_NUM] = {
 #define GESTURE_WORD_C          12
 #define GESTURE_WORD_W          13
 #define GESTURE_WORD_V          14
-#define GESTURE_DOUBLE_CLICK    15
+#define GESTURE_DOUBLE_CLICK    KEY_WAKEUP
 #define GESTURE_WORD_Z          16
 #define GESTURE_WORD_M          17
 #define GESTURE_WORD_O          18
