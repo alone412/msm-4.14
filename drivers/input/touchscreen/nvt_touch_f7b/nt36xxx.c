@@ -93,6 +93,21 @@ const uint16_t touch_key_array[TOUCH_KEY_NUM] = {
 #endif
 
 #if WAKEUP_GESTURE
+
+#define GESTURE_WORD_C          12
+#define GESTURE_WORD_W          13
+#define GESTURE_WORD_V          14
+#define GESTURE_DOUBLE_CLICK    15
+#define GESTURE_WORD_Z          16
+#define GESTURE_WORD_M          17
+#define GESTURE_WORD_O          18
+#define GESTURE_WORD_e          19
+#define GESTURE_WORD_S          20
+#define GESTURE_SLIDE_UP        21
+#define GESTURE_SLIDE_DOWN      22
+#define GESTURE_SLIDE_LEFT      23
+#define GESTURE_SLIDE_RIGHT     24
+
 const uint16_t gesture_key_array[] = {
 	KEY_WAKEUP,  //GESTURE_WORD_C
 	KEY_WAKEUP,  //GESTURE_WORD_W
@@ -541,19 +556,6 @@ static int32_t nvt_flash_proc_init(void)
 #endif
 
 #if WAKEUP_GESTURE
-#define GESTURE_WORD_C          12
-#define GESTURE_WORD_W          13
-#define GESTURE_WORD_V          14
-#define GESTURE_DOUBLE_CLICK    15
-#define GESTURE_WORD_Z          16
-#define GESTURE_WORD_M          17
-#define GESTURE_WORD_O          18
-#define GESTURE_WORD_e          19
-#define GESTURE_WORD_S          20
-#define GESTURE_SLIDE_UP        21
-#define GESTURE_SLIDE_DOWN      22
-#define GESTURE_SLIDE_LEFT      23
-#define GESTURE_SLIDE_RIGHT     24
 /* customized gesture id */
 #define DATA_PROTOCOL           30
 
