@@ -93,20 +93,35 @@ const uint16_t touch_key_array[TOUCH_KEY_NUM] = {
 #endif
 
 #if WAKEUP_GESTURE
+
+#define GESTURE_WORD_C          KEY_C
+#define GESTURE_WORD_W          KEY_W
+#define GESTURE_WORD_V          KEY_V
+#define GESTURE_DOUBLE_CLICK    KEY_WAKEUP
+#define GESTURE_WORD_Z          KEY_Z
+#define GESTURE_WORD_M          KEY_M
+#define GESTURE_WORD_O          KEY_O
+#define GESTURE_WORD_e          KEY_E
+#define GESTURE_WORD_S          KEY_S
+#define GESTURE_SLIDE_UP        KEY_UP
+#define GESTURE_SLIDE_DOWN      KEY_DOWN
+#define GESTURE_SLIDE_LEFT      KEY_LEFT
+#define GESTURE_SLIDE_RIGHT     KEY_RIGHT
+
 const uint16_t gesture_key_array[] = {
-	KEY_WAKEUP,  //GESTURE_WORD_C
-	KEY_WAKEUP,  //GESTURE_WORD_W
-	KEY_WAKEUP,  //GESTURE_WORD_V
-	KEY_WAKEUP,  //GESTURE_DOUBLE_CLICK
-	KEY_WAKEUP,  //GESTURE_WORD_Z
-	KEY_WAKEUP,  //GESTURE_WORD_M
-	KEY_WAKEUP,  //GESTURE_WORD_O
-	KEY_WAKEUP,  //GESTURE_WORD_e
-	KEY_WAKEUP,  //GESTURE_WORD_S
-	KEY_WAKEUP,  //GESTURE_SLIDE_UP
-	KEY_WAKEUP,  //GESTURE_SLIDE_DOWN
-	KEY_WAKEUP,  //GESTURE_SLIDE_LEFT
-	KEY_WAKEUP,  //GESTURE_SLIDE_RIGHT
+	GESTURE_WORD_C,
+	GESTURE_WORD_W,
+	GESTURE_WORD_V,
+	GESTURE_DOUBLE_CLICK,
+	GESTURE_WORD_Z,
+	GESTURE_WORD_M,
+	GESTURE_WORD_O,
+	GESTURE_WORD_e,
+	GESTURE_WORD_S,
+	GESTURE_SLIDE_UP,
+	GESTURE_SLIDE_DOWN,
+	GESTURE_SLIDE_LEFT,
+	GESTURE_SLIDE_RIGHT,
 };
 bool enable_gesture_mode = false; // for gesture
 EXPORT_SYMBOL(enable_gesture_mode);
@@ -541,19 +556,6 @@ static int32_t nvt_flash_proc_init(void)
 #endif
 
 #if WAKEUP_GESTURE
-#define GESTURE_WORD_C          12
-#define GESTURE_WORD_W          13
-#define GESTURE_WORD_V          14
-#define GESTURE_DOUBLE_CLICK    15
-#define GESTURE_WORD_Z          16
-#define GESTURE_WORD_M          17
-#define GESTURE_WORD_O          18
-#define GESTURE_WORD_e          19
-#define GESTURE_WORD_S          20
-#define GESTURE_SLIDE_UP        21
-#define GESTURE_SLIDE_DOWN      22
-#define GESTURE_SLIDE_LEFT      23
-#define GESTURE_SLIDE_RIGHT     24
 /* customized gesture id */
 #define DATA_PROTOCOL           30
 
